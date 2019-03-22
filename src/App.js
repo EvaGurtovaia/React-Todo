@@ -41,6 +41,7 @@ class App extends React.Component {
       const newTodoList = state.toDoList.map( (item) => {
         if (item.id === toDoItemId) 
           return { task: item.task, id: item.id, completed: true };
+          { item.completed = !item.completed }; 
         return item;
       } );
 
